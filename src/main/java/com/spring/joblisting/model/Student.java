@@ -13,8 +13,6 @@ public class Student {
     @Id
     private String studentId;
 
-    @JsonProperty
-    @Pattern(regexp = "^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$", message = "Enter a valid name")
     private String name;
 
     private String roll;

@@ -19,7 +19,6 @@ public class StudentController {
     public Student create(@RequestBody Student student){
 
         return studentService.create(student);
-
     }
 
     @PutMapping
@@ -31,7 +30,6 @@ public class StudentController {
     public Optional<Student> findStudentById(@PathVariable String id){
 
         return studentService.findById(id);
-
     }
 
     @GetMapping("/all")
