@@ -6,12 +6,23 @@ A CRUD Application for beginner using Spring boot framework and MongoDB database
 * Java 8
 * MongoDB
 * Git
+* Docker
 
 # How to Run
 
 git clone https://github.com/samim825/Spring-MongoDB-CRUD-Application.git
 
-Then Open The project and change application.properties file with the database uri and database name.
+Inside the project run the docker 
+
+```docker compose up```
+
+It will download the image of  MongoDB database and MongoDB express for User Interface.
+You can open the User Interface with the url:
+```localhost:8082``` 
+After opening the User Interface create a database named "joblisting".
+And create a collection named "students" under the "joblisting" database.
+You MongoDB database is ready. Now you can test the project.
+
 
 # Here I implement five APIs. You can test these are following given url
 

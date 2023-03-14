@@ -1,7 +1,10 @@
 package com.spring.joblisting.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import javax.validation.constraints.Pattern;
 
 
 @Document(collection = "students")
@@ -10,6 +13,8 @@ public class Student {
     @Id
     private String studentId;
 
+    @JsonProperty
+    @Pattern(regexp = "^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$", message = "Enter a valid name")
     private String name;
 
     private String roll;
